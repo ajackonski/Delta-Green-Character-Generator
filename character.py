@@ -12,6 +12,10 @@ class Character:
         self.bureaucracy = 10
         self.computer_science = 0
         self.craft = 0
+        self.craft_electrician = 0
+        self.craft_mechanic = 0
+        self.craft_microelectronics = 0
+        self.craft_custom = 0
         self.criminology = 10
         self.demolitions = 0
         self.disguise = 10
@@ -19,7 +23,9 @@ class Character:
         self.drive = 20
         self.firearms = 20
         self.first_aid = 10
-        self.foreign_language = 0
+        self.foreign_language1 = 0
+        self.foreign_language2 = 0
+        self.foreign_language3 = 0
         self.forensics = 0
         self.heavy_machinery = 10
         self.heavy_weapons = 0
@@ -37,6 +43,7 @@ class Character:
         self.psychotherapy = 10
         self.ride = 10
         self.science = 0
+        self.science_mathematics = 0
         self.search = 20
         self.sigint = 0
         self.stealth = 10
@@ -45,6 +52,7 @@ class Character:
         self.swim = 20
         self.unarmed_combat = 40
         self.unnatural = 0
+        self.bonds = 0
 
     def generate_init_stats_(self):  
         self.strength = self.generate_stat()
@@ -70,7 +78,47 @@ class Character:
                 current_min = ran_num
         final_val = sum(dice_rolls)
         return final_val
+   
+    def anthropologist(self):
+        self.anthropolgy += 50
+        self.bureaucracy += 40
+        self.foreign_language1 += 50
+        self.foreign_language2 += 40
+        self.history += 60
+        self.occult += 40
+        self.persuade += 40
+        self.bonds += 4
+
+    def computer_scientist(self):
+        self.computer_science += 60
+        self.craft_electrician += 30
+        self.craft_mechanic += 30
+        self.craft_microelectronics += 40
+        self.sigint += 40
+        self.bonds += 3
+
+    def federal_agent(self):
+        self.alertness += 50
+        self.bureaucracy += 40
+        self.criminology += 50
+        self.drive += 50
+        self.firearms += 50
+        self.forensics += 30
+        self.humint += 60
+        self.law += 30
+        self.persuade += 50
+        self.search += 50
+        self.unarmed_combat += 60
+        self.bonds += 3
+   
     def __str__(self):
         return f"""Your Agent\'s name is {self.name}. \nStrength: {self.strength} \nDexterity: {self.dexterity} 
 Constitution: {self.constitution} \nIntelligence: {self.intelligence} \nPower: {self.power} \nCharisma: {self.charisma} 
-Max HP: {self.max_hit_points} \nMax Willpower: {self.max_willpower_points} \nCurrent Sanity: {self.starting_sanity_points} \nBreaking Point: {self.breaking_point}"""
+Max HP: {self.max_hit_points} \nMax Willpower: {self.max_willpower_points} \nCurrent Sanity: {self.starting_sanity_points} \nBreaking Point: {self.breaking_point} \nBonds: {self.bonds} 
+Skills______________________ \nAccounting: {self.accounting} \nAlertness: {self.alertness} \nAnthropology: {self.anthropolgy} \nArcheology: {self.archeology}
+Art: {self.art} \nArtillery: {self.artillery} \nAthletics: {self.athletics} \nBureaucracy: {self.bureaucracy} \nComputer Science: {self.computer_science} \nCraft: {self.craft} 
+Criminology: {self.criminology} \nDemolitions: {self.demolitions} \nDisguise: {self.disguise} \nDodge: {self.dodge} \nDrive: {self.drive} \nFirearms: {self.firearms} \nFirst Aid: {self.first_aid}
+Foreign Language 1: {self.foreign_language1} \nForeign Language 2: {self.foreign_language2} \nForeign Language 3: {self.foreign_language3} \nForensics: {self.forensics} \nHeavy Machinery {self.heavy_machinery} 
+Heavy Weapons: {self.heavy_weapons} \nHistory: {self.history} \nHUMINT: {self.humint} \nLaw: {self.law} \nMedicine: {self.medicine} \nMelee Weapons: {self.melee_weapons} \nMilitary Science: {self.military_science}
+Navigate: {self.navigate} \nOccult: {self.occult} \nPersuade: {self.persuade} \nPharmacy: {self.pharmacy} \nPilot: {self.pilot} \nPsychotherapy: {self.psychotherapy} \nRide: {self.ride} \nScience: {self.science}
+Search: {self.search} \nSIGINT: {self.sigint} \nStealth: {self.stealth} \nSurgery: {self.surgery} \nSurvival: {self.survival} \nSwim: {self.swim} \nUnarmed Combat: {self.unarmed_combat} \nUnnatural: {self.unnatural}"""   

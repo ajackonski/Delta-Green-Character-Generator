@@ -108,14 +108,14 @@ class Character:
         self.law += 30
         self.persuade += 50
         self.search += 50
-        self.unarmed_combat += 60
+        self.unarmed_combat += 40
         self.bonds += 3
    
     def __str__(self):
         return f"""Your Agent\'s name is {self.name}. \nStrength: {self.strength} \nDexterity: {self.dexterity} 
 Constitution: {self.constitution} \nIntelligence: {self.intelligence} \nPower: {self.power} \nCharisma: {self.charisma} 
 Max HP: {self.max_hit_points} \nMax Willpower: {self.max_willpower_points} \nCurrent Sanity: {self.starting_sanity_points} \nBreaking Point: {self.breaking_point} \nBonds: {self.bonds} 
-Skills______________________ \nAccounting: {self.accounting} \nAlertness: {self.alertness} \nAnthropology: {self.anthropolgy} \nArcheology: {self.archeology}
+Skills---------------------------- \nAccounting: {self.accounting} \nAlertness: {self.alertness} \nAnthropology: {self.anthropolgy} \nArcheology: {self.archeology}
 Art: {self.art} \nArtillery: {self.artillery} \nAthletics: {self.athletics} \nBureaucracy: {self.bureaucracy} \nComputer Science: {self.computer_science} \nCraft: {self.craft} 
 Criminology: {self.criminology} \nDemolitions: {self.demolitions} \nDisguise: {self.disguise} \nDodge: {self.dodge} \nDrive: {self.drive} \nFirearms: {self.firearms} \nFirst Aid: {self.first_aid}
 Foreign Language 1: {self.foreign_language1} \nForeign Language 2: {self.foreign_language2} \nForeign Language 3: {self.foreign_language3} \nForensics: {self.forensics} \nHeavy Machinery {self.heavy_machinery} 

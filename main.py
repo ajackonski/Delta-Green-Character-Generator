@@ -6,3 +6,5 @@ if init_ == "y" or init_ == "yes":
     agent = Character(name)
     agent.generate_init_stats_()
     print(agent)
+else:
+    print("Damn that sucks")

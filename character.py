@@ -121,4 +121,5 @@ Criminology: {self.criminology} \nDemolitions: {self.demolitions} \nDisguise: {s
 Foreign Language 1: {self.foreign_language1} \nForeign Language 2: {self.foreign_language2} \nForeign Language 3: {self.foreign_language3} \nForensics: {self.forensics} \nHeavy Machinery {self.heavy_machinery} 
 Heavy Weapons: {self.heavy_weapons} \nHistory: {self.history} \nHUMINT: {self.humint} \nLaw: {self.law} \nMedicine: {self.medicine} \nMelee Weapons: {self.melee_weapons} \nMilitary Science: {self.military_science}
 Navigate: {self.navigate} \nOccult: {self.occult} \nPersuade: {self.persuade} \nPharmacy: {self.pharmacy} \nPilot: {self.pilot} \nPsychotherapy: {self.psychotherapy} \nRide: {self.ride} \nScience: {self.science}
-Search: {self.search} \nSIGINT: {self.sigint} \nStealth: {self.stealth} \nSurgery: {self.surgery} \nSurvival: {self.survival} \nSwim: {self.swim} \nUnarmed Combat: {self.unarmed_combat} \nUnnatural: {self.unnatural}"""   
+Search: {self.search} \nSIGINT: {self.sigint} \nStealth: {self.stealth} \nSurgery: {self.surgery} \nSurvival: {self.survival} \nSwim: {self.swim} \nUnarmed Combat: {self.unarmed_combat} \nUnnatural: {self.unnatural}
+Number of Bonds: {self.bonds}"""   
